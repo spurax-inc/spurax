@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Spurax</title>
+  <meta name="description" content="Get in touch with Spurax. Questions, partnerships and selling enquiries are all welcome.">
+  <link rel="icon" href="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Contact</span>
+      <h1>We would love <em>to hear from you.</em></h1>
+      <p>Questions, partnerships or selling enquiries, send us a message and the right person will reply.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <div class="item">
+          <div class="label">Email</div>
+          <a class="big" href="mailto:info@spurax.com">info@spurax.com</a>
+        </div>
+        <div class="item">
+          <div class="label">Location</div>
+          <span style="font-family:var(--serif);font-size:1.3rem;">Lagos, Nigeria</span>
+        </div>
+        <div class="item">
+          <div class="label">Follow us</div>
+          <div id="contactSocials"></div>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <h3>Send us a message</h3>
+        <form id="contactForm" style="margin-top:22px;">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Your email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="topic">What is this about?</label>
+          <select id="topic" name="topic">
+            <option>General enquiry</option>
+            <option>Selling on Spurax</option>
+            <option>Partnership</option>
+            <option>Help &amp; support</option>
+            <option>Media</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit" class="btn">Send message</button>
+          <p class="form-note">This opens your email app with the message ready to send to info@spurax.com.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>
